@@ -20,7 +20,8 @@
 
 <body>
     <div id="map"></div>
-    <form class='search' id='searchForm' data-bind="valueUpdate: 'keypress', submit: search">
+    <!--<form class='search' id='searchForm' data-bind="valueUpdate: 'keypress', submit: search">-->
+    <form class='search' id='searchForm' data-bind="event: { keyup: search }">
         <input id="pac-input" class="controls" autocomplete="off" type="text" placeholder="Filter results by name/type" data-bind="textInput: query">
         <!--    <button class="search-button" type="submit" data-bind="click: search">
             <i class="fa fa-search fa-2x fa-inverse"></i>

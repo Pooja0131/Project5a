@@ -1,0 +1,12 @@
+{
+    "name": "neighbourhood-project",
+    "description": "Neighbourhood Project",
+    "version": "0.0.1",
+    "devDependencies": {
+        "grunt": "~0.4.1",
+        "grunt-autoprefixer": "^3.0.3",
+        "grunt-contrib-concat": "^0.5.1",
+        "grunt-contrib-cssmin": "^0.14.0",
+        "grunt-contrib-uglify": "^0.10.1"
+    }
+}

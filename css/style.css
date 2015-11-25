@@ -1,0 +1,446 @@
+/*Basic Styles*/
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Hind', sans-serif;
+}
+
+#map {
+    height: 100%;
+    width: 100%;
+}
+
+h4 {
+    margin: 10px 0 0 0;
+}
+
+p {
+    margin: 0 0 10px 0;
+    word-wrap: break-word;
+}
+
+/*Serach form Style*/
+.search {
+    z-index: 100;
+    position: fixed;
+    margin-left: 12px;
+    margin-top: 10px;
+    height: 32px;
+    width: 250px;
+}
+
+/*Search box style*/
+#pac-input {
+    float: left;
+    border: 1px solid transparent;
+    background-color: #fff !important;
+    font-family: 'Hind', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    text-overflow: ellipsis;
+    width: 200px;
+    border-radius: 5px 0 0 5px;
+    padding: 5px 5px 5px 10px;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    outline: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom-width: 0;
+    border-top-width: 0;
+}
+
+#pac-input:focus {
+    border-top: 1px solid #58F;
+    border-bottom: 1px solid #58F;
+    border-left: 1px solid #58F;
+}
+
+/*Search button Style*/
+.search-button {
+    float: right;
+    padding: 0;
+    background: #49D;
+    height: 100%;
+    position: absolute;
+    border: 0;
+    right: 0;
+    width: 35px;
+    outline: 0;
+    border-radius: 0 5px 5px 0;
+}
+
+.search-button:hover {
+    background: #ACD;
+}
+
+/*Reset button Style*/
+#resetButton {
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    border: 1px solid transparent;
+    border-radius: 5px 5px 5px 5px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    height: 32px;
+    outline: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    z-index: 0;
+    position: absolute;
+    background-color: #fff;
+    font-family: 'Hind', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    padding: 0 11px 0 13px;
+    text-overflow: ellipsis;
+    width: auto;
+}
+
+/*List Display toggle button Style*/
+#listDisplay {
+    margin: 10px 5px 0 5px;
+    border: 1px solid transparent;
+    border-radius: 5px 5px 5px 5px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    height: 32px;
+    outline: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    z-index: 0;
+    position: absolute;
+    background-color: #fff;
+    font-family: 'Hind', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    padding: 0 10px 0 10px;
+    text-overflow: ellipsis;
+    width: 280px;
+}
+
+/*List Style*/
+.filtered-places {
+    float: right;
+    top: 15px;
+    background: none;
+    height: 85vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 280px;
+}
+
+.place {
+    padding-left: 10px;
+    padding-right: 5px;
+    position: relative;
+    border: 1px solid #ddd;
+    background: white;
+    width: 250px;
+    display: inline-block;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.place:hover {
+    background: #49D;
+}
+
+#placeName {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#placeImage {
+    margin-right: 10px;
+    float: left;
+    text-align: left;
+    display: inline;
+}
+
+#placeNameDiv {
+    float: left;
+    text-align: right;
+    display: inline;
+    word-wrap: break-word;
+}
+
+/*Infowindow Content style*/
+.photos-loc {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    float: left;
+    white-space: nowrap;
+    padding-bottom: 10px;
+    max-width: 400px;
+    max-height: 250px;
+    height: 200px;
+}
+
+.photo-loc {
+    margin-left: 20px;
+    margin-bottom: 5px;
+    box-shadow: 0 2px 2px #222;
+}
+
+.back-image {
+    position: absolute;
+    text-align: center;
+    margin-left: 100px;
+}
+
+.next-image {
+    position: absolute;
+    text-align: center;
+    margin-left: 150px;
+}
+
+.rating-img {
+    float: left;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.review {
+    float: left;
+}
+
+li {
+    display: inline-block;
+    padding: 0;
+}
+
+#images {
+    position: absolute;
+    max-width: 400px;
+    max-height: 450px;
+}
+
+#content.images {
+    max-height: inherit;
+}
+
+#InfoText {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    max-height: 350px;
+    font-family: 'Hind', sans-serif;
+    font-size: 14px !important;
+    font-weight: 200;
+}
+
+#wikiTitle {
+    font-size: 14px;
+    font-weight: 200;
+}
+
+#wikiC {
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+td {
+    text-align: center;
+    padding: 5px 5px 5px 5px;
+}
+
+/*Infowindow tab style*/
+.tab-links li {
+    background-color: #EEE;
+    padding: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    border: 1px solid black;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.tabs {
+    width: 400px;
+    display: inline-block;
+}
+
+.tab-links:after {
+    display: block;
+    clear: both;
+    content: '';
+}
+
+.tab-links li {
+    margin: 0 5px;
+    float: left;
+    list-style: none;
+}
+
+.tab-links {
+    padding-left: 0;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    display: inline-block;
+    padding: 0;
+}
+
+.tab-links a {
+    padding: 5px 7px;
+    display: inline-block;
+    border-radius: 5px 5px 5px 5px;
+    background: #49D;
+    font-size: 15px;
+    font-weight: 300;
+    color: #000;
+    transition: all linear 0.15s;
+}
+
+.tab-links a:hover {
+    background: #ACD;
+    text-decoration: none;
+}
+
+li.active a,
+li.active a:hover {
+    background: #fff;
+    color: #444;
+}
+
+.tab {
+    display: none;
+}
+
+.tab.active {
+    display: block;
+}
+
+#tab1 {
+    height: 230px;
+}
+
+#tab2 {
+    overflow-y: scroll !important;
+    padding-right: 10px;
+    height: 200px;
+    text-align: justify;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+/* Media Queries */
+@media screen and (min-width: 710px) and (max-width: 1050px) {
+    .tab-links {
+        width: 350px;
+    }
+    .tab-content {
+        width: 350px;
+    }
+    #tab1 {
+        height: auto;
+    }
+    #tab2 {
+        width: 340px;
+    }
+    #listDisplay {
+        width: 230px;
+    }
+    .filtered-places {
+        width: 230px;
+    }
+    .place {
+        width: 200px;
+    }
+}
+
+@media screen and (min-width: 540px) and (max-width: 709px) {
+    .tab-links {
+        width: 210px;
+    }
+    .tab-content {
+        width: 205px;
+    }
+    .tabs {
+        width: 205px;
+    }
+    #tab1 {
+        height: auto;
+    }
+    .photos-loc {
+        width: 205px;
+    }
+    /*Hide reviews tab*/    
+    div .tabs .tab-links li:nth-child(2) {
+        display: none;
+    }
+    /*Hide yelp tab*/
+    div .tabs .tab-links li:nth-child(3) {
+        display: none;
+    }
+    #listDisplay {
+        width: 150px;
+    }
+    .filtered-places {
+        width: 150px;
+    }
+    .place {
+        width: 120px;
+    }
+}
+
+@media screen and (max-width: 539px) {
+    #listDisplay {
+        width: 100px;
+        height: 45px;
+        margin-top: 50px;
+        float: left;
+        text-align: left;
+        display: inline;
+        word-wrap: break-word;
+    }
+    .filtered-places {
+        width: 100px;
+        height: 75vh;
+        padding-right: 5px;
+    }
+    .place {
+        width: 80px;
+    }
+    /*Hide reviews tab*/    
+    div .tabs .tab-links li:nth-child(2) {
+        display: none;
+    }
+    /*Hide yelp tab*/
+    div .tabs .tab-links li:nth-child(3) {
+        display: none;
+    }
+    /*Hide photo tab*/
+    div .tabs .tab-links li:nth-child(4) {
+        display: none;
+    }
+    /*Hide nearby tab*/
+    div .tabs .tab-links li:nth-child(5) {
+        display: none;
+    }
+    #InfoText {
+        width: 73px;
+    }
+    .tab-links {
+        width: 73px;
+    }
+    #tab1 {
+        overflow-y: scroll;
+        width: 75px;
+    }
+    .tab-links a {
+        font-size: 11px;
+    }
+    .placeImage {
+        display: none;
+    }
+    #pac-input {
+        width: 110px;
+    }
+    .search {
+        width: 150px;
+    }
+    .search-button {
+        width: 25px;
+    }
+}
